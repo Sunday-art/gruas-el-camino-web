@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grúas y Traslado de Maquinaria en Zona Industrial SLP | Grúas El Camino</title>
+    <meta name="description" content="Servicio especializado de grúas en la Zona Industrial de San Luis Potosí. Traslado de maquinaria, montacargas y flotillas. Facturación y servicio 24/7.">
+    <meta name="keywords" content="grúas zona industrial slp, traslado de maquinaria san luis potosi, grúas para montacargas, servicio de grúas facturacion slp">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-container">
+        <div>
+            <span class="logo-main">GRÚAS</span>
+            <span class="logo-sub">EL CAMINO</span>
+            <div class="status-247">ESPECIALISTAS EN ZONA INDUSTRIAL SLP</div>
+        </div>
+        <div class="header-contact">
+            <a href="tel:4443338273" class="phone-link">📞 444 333 8273</a>
+            <div class="status-247">SERVICIO 24 HORAS</div>
+        </div>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-wrapper">
+        <div class="hero-card">
+            <div class="badge-facturacion">✅ FACTURACIÓN INMEDIATA</div>
+            
+            <h1 class="hero-t">
+                Soluciones Logísticas y Grúas en la Zona Industrial
+            </h1>
+            <p class="hero-q">Traslado seguro de maquinaria, equipo pesado y rescate de flotillas comerciales.</p>
+
+            <ul class="hero-items">
+                <li>✔ Atención rápida a Naves Industriales</li>
+                <li>✔ Traslado de Montacargas y Tornos</li>
+                <li>✔ Rescate de vehículos utilitarios</li>
+                <li>✔ Operadores capacitados</li>
+            </ul>
+
+            <div class="hero-buttons">
+                <a href="tel:4443338273" class="btn-primary">Llamar a Cabina</a>
+                <a href="https://wa.me/524443338273?text=Hola,%20necesito%20cotizar%20un%20servicio%20para%20la%20Zona%20Industrial.%20Tengo%20los%20datos%20de%20peso%20y%20ubicación." class="btn-whatsapp">Cotizar por WhatsApp</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section">
+    <h2>Especialistas en Carga Pesada</h2>
+    <div class="services-grid">
+        <div class="service-box">
+            <h3>🚜 Maquinaria Industrial</h3>
+            <p>Movimiento de tornos, fresadoras, prensas y equipo de precisión de diferentes tonelajes.</p>
+        </div>
+        <div class="service-box">
+            <h3>🏗️ Montacargas y Almacén</h3>
+            <p>Traslado especializado de montacargas eléctricos y de combustión. Carga y descarga segura.</p>
+        </div>
+        <div class="service-box">
+            <h3>🚗 Flotillas y Autos</h3>
+            <p>Atención a vehículos de personal, camionetas de reparto y rescate vial 24/7 en SLP y carreteras.</p>
+        </div>
+    </div>
+</section>
+
+<section class="quote-guide">
+    <h2>¿Cómo solicitar tu cotización rápida?</h2>
+    <p>Para darte el precio exacto de inmediato por WhatsApp, ten a la mano:</p>
+    <div class="steps-container">
+        <div class="step">📸 <strong>1. Foto</strong> de la maquinaria o vehículo</div>
+        <div class="step">⚖️ <strong>2. Peso</strong> aproximado (tonelaje)</div>
+        <div class="step">📍 <strong>3. Ubicación</strong> de origen y destino</div>
+    </div>
+</section>
+
+<section class="gallery">
+    <h2>Nuestros Equipos en Acción</h2>
+    <div class="carousel">
+        <button class="arrow left" onclick="move(-1)">❮</button>
+        <div class="track" id="track">
+            <img src="img/foto22.jpeg" alt="Grúa trasladando maquinaria en SLP">
+            <img src="img/foto16.jpeg" alt="Maniobra de grúa industrial">
+            <img src="img/foto24.jpeg" alt="Servicio de rescate Zona Industrial">
+            <img src="img/foto10.jpeg" alt="Grúas El Camino SLP">
+        </div>
+        <button class="arrow right" onclick="move(1)">❯</button>
+    </div>
+</section>
+
+<section class="map">
+    <h2>Nuestra Zona de Cobertura Principal</h2>
+    <iframe src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=es&amp;q=Zona%20Industrial,%20San%20Luis%20Potosí+(Grúas%20El%20Camino)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" loading="lazy"></iframe>
+</section>
+
+<section class="social">
+    <a href="https://www.facebook.com/share/14ZQFT9Wizd/" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Facebook">
+        <span>Síguenos en Facebook</span>
+    </a>
+</section>
+
+<a href="https://wa.me/524443338273" class="whatsapp-float">💬</a>
+
+<footer>
+    © 2026 Grúas El Camino | San Luis Potosí, S.L.P. | Facturación Disponible
+</footer>
+
+<script>
+// Tu mismo script del carrusel, funciona perfecto.
+const track = document.getElementById('track');
+let speed = 0.8;
+
+function autoScroll(){
+    track.scrollLeft += speed;
+    if(track.scrollLeft >= track.scrollWidth - track.clientWidth){
+        track.scrollLeft = 0;
+    }
+    requestAnimationFrame(autoScroll);
+}
+autoScroll();
+
+function move(dir){
+    track.scrollBy({left: dir * 300, behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
